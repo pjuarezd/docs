@@ -1,0 +1,2399 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 1-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 2-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-2
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 3-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-3
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 4-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-4
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 5-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-5
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 6-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-6
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 7-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-7
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 8-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-8
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 9-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-9
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 10-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-10
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 11-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-11
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: 12-pvc-8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: 5Gi
+  local:
+    path: /var/local-path-provisioner/pvc-8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - 
+          matchExpressions:
+            - 
+              key: kubernetes.io/hostname
+              operator: In
+              values:
+                - kind-worker-12
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: directpv-min-io
