@@ -3,14 +3,218 @@ apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
   - role: control-plane
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/1-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/1-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/1-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/1-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/1-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/1-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/1-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/1-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/2-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/2-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/2-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/2-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/2-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/2-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/2-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/2-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/3-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/3-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/3-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/3-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/3-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/3-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/3-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/3-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/4-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/4-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/4-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/4-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/4-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/4-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/4-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/4-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/5-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/5-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/5-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/5-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/5-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/5-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/5-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/5-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/6-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/6-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/6-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/6-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/6-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/6-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/6-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/6-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/7-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/7-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/7-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/7-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/7-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/7-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/7-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/7-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/8-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/8-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/8-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/8-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/8-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/8-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/8-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/8-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/9-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/9-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/9-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/9-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/9-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/9-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/9-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/9-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/10-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/10-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/10-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/10-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/10-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/10-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/10-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/10-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/11-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/11-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/11-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/11-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/11-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/11-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/11-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/11-pv-8
+        containerPath: /var/local-path-provisioner/pv-8
   - role: worker
+    extraMounts:
+      - hostPath: /tmp/mounts/12-pv-1
+        containerPath: /var/local-path-provisioner/pv-1
+      - hostPath: /tmp/mounts/12-pv-2
+        containerPath: /var/local-path-provisioner/pv-2
+      - hostPath: /tmp/mounts/12-pv-3
+        containerPath: /var/local-path-provisioner/pv-3
+      - hostPath: /tmp/mounts/12-pv-4
+        containerPath: /var/local-path-provisioner/pv-4
+      - hostPath: /tmp/mounts/12-pv-5
+        containerPath: /var/local-path-provisioner/pv-5
+      - hostPath: /tmp/mounts/12-pv-6
+        containerPath: /var/local-path-provisioner/pv-6
+      - hostPath: /tmp/mounts/12-pv-7
+        containerPath: /var/local-path-provisioner/pv-7
+      - hostPath: /tmp/mounts/12-pv-8
+        containerPath: /var/local-path-provisioner/pv-8

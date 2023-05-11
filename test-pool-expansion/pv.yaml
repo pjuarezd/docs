@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-1
+  name: 1-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -9,7 +9,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-2
+  name: 1-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -34,7 +34,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -51,7 +51,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-3
+  name: 1-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -59,7 +59,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -76,7 +76,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-4
+  name: 1-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -84,7 +84,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -101,7 +101,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-5
+  name: 1-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -109,7 +109,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -126,7 +126,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-6
+  name: 1-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -134,7 +134,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -151,7 +151,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-7
+  name: 1-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -159,7 +159,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -176,7 +176,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 1-pvc-8
+  name: 1-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -184,7 +184,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -201,7 +201,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-1
+  name: 2-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -209,7 +209,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -226,7 +226,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-2
+  name: 2-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -234,7 +234,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -251,7 +251,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-3
+  name: 2-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -259,7 +259,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -276,7 +276,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-4
+  name: 2-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -284,7 +284,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -301,7 +301,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-5
+  name: 2-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -309,7 +309,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -326,7 +326,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-6
+  name: 2-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -334,7 +334,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -351,7 +351,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-7
+  name: 2-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -359,7 +359,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -376,7 +376,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 2-pvc-8
+  name: 2-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -384,7 +384,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -401,7 +401,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-1
+  name: 3-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -409,7 +409,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -426,7 +426,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-2
+  name: 3-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -434,7 +434,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -451,7 +451,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-3
+  name: 3-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -459,7 +459,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -476,7 +476,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-4
+  name: 3-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -484,7 +484,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -501,7 +501,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-5
+  name: 3-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -509,7 +509,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -526,7 +526,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-6
+  name: 3-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -534,7 +534,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -551,7 +551,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-7
+  name: 3-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -559,7 +559,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -576,7 +576,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 3-pvc-8
+  name: 3-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -584,7 +584,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -601,7 +601,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-1
+  name: 4-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -609,7 +609,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -626,7 +626,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-2
+  name: 4-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -634,7 +634,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -651,7 +651,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-3
+  name: 4-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -659,7 +659,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -676,7 +676,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-4
+  name: 4-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -684,7 +684,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -701,7 +701,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-5
+  name: 4-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -709,7 +709,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -726,7 +726,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-6
+  name: 4-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -734,7 +734,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -751,7 +751,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-7
+  name: 4-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -759,7 +759,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -776,7 +776,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 4-pvc-8
+  name: 4-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -784,7 +784,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -801,7 +801,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-1
+  name: 5-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -809,7 +809,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -826,7 +826,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-2
+  name: 5-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -834,7 +834,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -851,7 +851,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-3
+  name: 5-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -859,7 +859,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -876,7 +876,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-4
+  name: 5-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -884,7 +884,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -901,7 +901,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-5
+  name: 5-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -909,7 +909,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -926,7 +926,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-6
+  name: 5-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -934,7 +934,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -951,7 +951,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-7
+  name: 5-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -959,7 +959,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -976,7 +976,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 5-pvc-8
+  name: 5-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -984,7 +984,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1001,7 +1001,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-1
+  name: 6-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1009,7 +1009,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1026,7 +1026,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-2
+  name: 6-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1034,7 +1034,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1051,7 +1051,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-3
+  name: 6-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1059,7 +1059,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1076,7 +1076,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-4
+  name: 6-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1084,7 +1084,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1101,7 +1101,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-5
+  name: 6-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1109,7 +1109,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1126,7 +1126,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-6
+  name: 6-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1134,7 +1134,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1151,7 +1151,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-7
+  name: 6-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1159,7 +1159,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1176,7 +1176,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 6-pvc-8
+  name: 6-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1184,7 +1184,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1201,7 +1201,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-1
+  name: 7-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1209,7 +1209,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1226,7 +1226,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-2
+  name: 7-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1234,7 +1234,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1251,7 +1251,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-3
+  name: 7-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1259,7 +1259,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1276,7 +1276,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-4
+  name: 7-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1284,7 +1284,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1301,7 +1301,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-5
+  name: 7-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1309,7 +1309,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1326,7 +1326,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-6
+  name: 7-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1334,7 +1334,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1351,7 +1351,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-7
+  name: 7-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1359,7 +1359,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1376,7 +1376,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 7-pvc-8
+  name: 7-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1384,7 +1384,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1401,7 +1401,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-1
+  name: 8-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1409,7 +1409,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1426,7 +1426,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-2
+  name: 8-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1434,7 +1434,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1451,7 +1451,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-3
+  name: 8-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1459,7 +1459,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1476,7 +1476,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-4
+  name: 8-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1484,7 +1484,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1501,7 +1501,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-5
+  name: 8-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1509,7 +1509,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1526,7 +1526,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-6
+  name: 8-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1534,7 +1534,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1551,7 +1551,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-7
+  name: 8-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1559,7 +1559,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1576,7 +1576,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 8-pvc-8
+  name: 8-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1584,7 +1584,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1601,7 +1601,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-1
+  name: 9-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1609,7 +1609,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1626,7 +1626,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-2
+  name: 9-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1634,7 +1634,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1651,7 +1651,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-3
+  name: 9-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1659,7 +1659,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1676,7 +1676,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-4
+  name: 9-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1684,7 +1684,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1701,7 +1701,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-5
+  name: 9-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1709,7 +1709,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1726,7 +1726,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-6
+  name: 9-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1734,7 +1734,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1751,7 +1751,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-7
+  name: 9-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1759,7 +1759,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1776,7 +1776,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 9-pvc-8
+  name: 9-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1784,7 +1784,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1801,7 +1801,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-1
+  name: 10-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1809,7 +1809,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1826,7 +1826,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-2
+  name: 10-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1834,7 +1834,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1851,7 +1851,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-3
+  name: 10-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1859,7 +1859,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1876,7 +1876,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-4
+  name: 10-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1884,7 +1884,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1901,7 +1901,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-5
+  name: 10-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1909,7 +1909,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1926,7 +1926,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-6
+  name: 10-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1934,7 +1934,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1951,7 +1951,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-7
+  name: 10-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1959,7 +1959,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -1976,7 +1976,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 10-pvc-8
+  name: 10-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -1984,7 +1984,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2001,7 +2001,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-1
+  name: 11-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2009,7 +2009,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2026,7 +2026,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-2
+  name: 11-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2034,7 +2034,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2051,7 +2051,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-3
+  name: 11-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2059,7 +2059,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2076,7 +2076,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-4
+  name: 11-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2084,7 +2084,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2101,7 +2101,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-5
+  name: 11-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2109,7 +2109,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2126,7 +2126,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-6
+  name: 11-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2134,7 +2134,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2151,7 +2151,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-7
+  name: 11-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2159,7 +2159,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2176,7 +2176,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 11-pvc-8
+  name: 11-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2184,7 +2184,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2201,7 +2201,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-1
+  name: 12-pv-1
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2209,7 +2209,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-1
+    path: /var/local-path-provisioner/pv-1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2226,7 +2226,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-2
+  name: 12-pv-2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2234,7 +2234,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-2
+    path: /var/local-path-provisioner/pv-2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2251,7 +2251,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-3
+  name: 12-pv-3
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2259,7 +2259,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-3
+    path: /var/local-path-provisioner/pv-3
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2276,7 +2276,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-4
+  name: 12-pv-4
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2284,7 +2284,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-4
+    path: /var/local-path-provisioner/pv-4
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2301,7 +2301,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-5
+  name: 12-pv-5
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2309,7 +2309,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-5
+    path: /var/local-path-provisioner/pv-5
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2326,7 +2326,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-6
+  name: 12-pv-6
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2334,7 +2334,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-6
+    path: /var/local-path-provisioner/pv-6
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2351,7 +2351,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-7
+  name: 12-pv-7
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2359,7 +2359,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-7
+    path: /var/local-path-provisioner/pv-7
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -2376,7 +2376,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: 12-pvc-8
+  name: 12-pv-8
 spec:
   accessModes:
     - ReadWriteOnce
@@ -2384,7 +2384,7 @@ spec:
   capacity:
     storage: 5Gi
   local:
-    path: /var/local-path-provisioner/pvc-8
+    path: /var/local-path-provisioner/pv-8
   nodeAffinity:
     required:
       nodeSelectorTerms:
